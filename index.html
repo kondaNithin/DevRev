@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+  
+  <header>
+   <header class="header">
+    <p>
+      <button class="button">HOME</button>
+      <button class="button" id="form-open">Login</button>
+    </p>
+    
+    <nav class="nav">
+      <ul class="nav_items">
+        <div class="main">
+          <div class="logo"> 
+            <img src="l22.png">
+          </div>
+          <ul>
+           
+          </ul>
+      </ul>
+      <p>
+  
+      </p>
+    </nav>
+    <div class="container">
+      <h1>Library Management System</h1>
+      <form id="add-book-form">
+        <input type="text" id="title" placeholder="Book Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <button type="submit">Add Book</button>
+      </form>
+      <table id="book-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+  </div>
+  </header>
+  <section class="home">
+   
+    <div class="form_container">
+      
+      <i class="uil uil-times form_close"></i>
+      
+      
+      <div class="form login_form">
+        <label for="" class="close-btn fas fa-times"></label>
+        <form action="#">
+          <h2>Login</h2>
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </span>
+            <a href="#" class="forgot_pw">Forgot password?</a>
+          </div>
+          <button class="button">Login Now</button>
+     
+          <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+        </form>
+      </div>
+      <!-- Signup From -->
+      <div class="form signup_form">
+        <span id="close-icon"><ion-icon name="close-circle-outline"></ion-icon></span>
+        <form action="#">
+          <h2>Signup</h2>
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Confirm password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <button class="button">Signup Now</button>
+          <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+  </script>
+</header>
+  <script src="script.js"></script>
+</body>
+</html>
